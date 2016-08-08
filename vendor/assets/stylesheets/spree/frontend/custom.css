@@ -2,3 +2,12 @@
   width: 306px;
   height: 40px;
 }
+
+.header_phone {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
