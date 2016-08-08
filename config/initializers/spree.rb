@@ -16,7 +16,7 @@ Spree.config do |config|
 
   config.logo = 'rails.png' #this is to change the main logo of your site
   # config.logo = '/assets/logo/spree_50-1c7335be355d4672a35c5023956d0c883f254831f3e3dae3f2ca05976ceb5e50.png' #this is to change back to original logo
-  # config.admin_interface_logo = 'rails_2.png'
+  config.admin_interface_logo = 'admin/rails_2.png'
 end
 
 Spree.user_class = "Spree::User"
