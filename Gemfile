@@ -52,5 +52,4 @@ gem 'spree_auth_devise', '~> 3.0.0'
 gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express', branch: '3-0-stable'
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '3-0-stable'
 gem 'spree_i18n', git: 'git://github.com/spree/spree_i18n.git', branch: '3-0-stable'
-gem 'spree_simple_sales', :path => '/spree_simple_sales'
-
+gem 'spree_sakhat_sales', github: 'alexvco/spree_sakhat_sales'
