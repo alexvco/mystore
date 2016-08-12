@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/alexvco/spree_sakhat_sales.git
-  revision: 5d48b448b5efc8be2ff1ef076436c330d41f1c2b
+  revision: 73e5edc4d795711ae9ffb73f5e5b0213753bcea6
   specs:
     spree_sakhat_sales (3.0.9)
       spree_core (~> 3.0.9)
