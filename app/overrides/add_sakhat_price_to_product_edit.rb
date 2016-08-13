@@ -18,4 +18,4 @@ Deface::Override.new(:virtual_path => 'spree/admin/products/_form',
         <%= f.error_message_on :sakhat_price %>
       <% end %>
     </div>
-  ")
+  ") 
