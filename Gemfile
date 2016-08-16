@@ -45,6 +45,8 @@ group :development do
   gem 'spring'
 end
 
+gem 'rails_12factor', group: :production
+
 
 gem 'spree', '~> 3.0.9'
 gem 'spree_gateway', '~> 3.0.0'
