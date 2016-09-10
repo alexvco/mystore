@@ -1,7 +1,14 @@
+/*to change dimensions of logo (these are the original spree dimensions)*/
 #spree-header #logo img {
   width: 306px;
   height: 40px;
 }
+
+/*to change border-color of image-products (you need to chain both classes without space between them to work)*/
+/*.panel.panel-default {
+  border-color:#000000;
+}*/
+
 
 .header_phone {
   position: absolute;
