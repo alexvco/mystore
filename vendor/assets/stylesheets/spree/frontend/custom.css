@@ -7,6 +7,10 @@
 /*to change border-color of image-products (you need to chain both classes without space between them to work)*/
 /*.panel.panel-default {
   border-color:#000000;
+}
+
+.panel.panel-default:hover {
+  border-color:#ffffff;
 }*/
 
 
