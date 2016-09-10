@@ -1,9 +1,3 @@
-/*to change dimensions of logo (these are the original spree dimensions)*/
-#spree-header #logo img {
-  width: 306px;
-  height: 40px;
-}
-
 /*to change border-color of image-products (you need to chain both classes without space between them to work)*/
 /*.panel.panel-default {
   border-color:#000000;
@@ -13,12 +7,73 @@
   border-color:#ffffff;
 }*/
 
-
-.header_phone {
+/*From brad traversy tutorial*/
+/*.header_phone {
   position: absolute;
   top: 0px;
   right: 30px;
   font-weight: bold;
   font-size: 15px;
   color: white;
+}*/
+
+/*to change dimensions of logo (these are the original spree dimensions)*/
+#spree-header #logo img {
+  width: 306px;
+  height: 40px;
+}
+
+div#spree-header {
+  background: #45b3e7;
+  margin-bottom: 0;
+}
+
+div#spree-header.need-margin {
+  margin-bottom: 40px;
+}
+
+#spree-header #header {
+  padding-bottom: 0;
+}
+
+header .container-fluid .row {
+  padding-bottom: 14px;
+}
+
+/*nav.navbar {
+  padding-right: 0;
+  margin-right: 0;
+}*/
+
+/*Carousel */
+header.carousel {
+    /*height: 50%;*/
+    height: 300px;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    /*height: 100%;*/
+    height: 300px;
+}
+
+header.carousel .fill {
+    width: 100%;
+    /*height: 100%;*/
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel.slide {
+  margin-bottom: 30px;
+}
+
+body {
+  padding-top: 0;
+}
+
+body#default {
+  padding-top: 0;
 }
