@@ -23,12 +23,6 @@ GIT
       spree_backend (~> 3.0.0)
 
 GIT
-  remote: git://github.com/spree/spree_blue_theme.git
-  revision: 6674a0d1894240a2f39b6364e81a4b94e4158d6e
-  specs:
-    spree_blue_theme (0.2.0)
-
-GIT
   remote: git://github.com/spree/spree_i18n.git
   revision: fb26046240aef6ec516abd4e2a363e65487adaea
   branch: 3-0-stable
@@ -399,7 +393,6 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   spree (~> 3.0.9)
   spree_auth_devise (~> 3.0.0)
-  spree_blue_theme!
   spree_gateway (~> 3.0.0)
   spree_i18n!
   spree_mail_settings!
@@ -411,4 +404,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
