@@ -17,12 +17,18 @@
   color: white;
 }*/
 
-/*to change dimensions of logo (these are the original spree dimensions)*/
+/*********************************/
+/* LOGO */
+/*********************************/
 #spree-header #logo img {
   width: 306px;
   height: 40px;
 }
 
+
+/*********************************/
+/* NAVBAR OR HEADER */
+/*********************************/
 div#spree-header {
   background: #45b3e7;
   margin-bottom: 0;
@@ -41,12 +47,10 @@ header .container-fluid .row {
   padding-bottom: 14px;
 }
 
-/*nav.navbar {
-  padding-right: 0;
-  margin-right: 0;
-}*/
 
-/*Carousel */
+/*********************************/
+/* CAROUSEL */
+/*********************************/
 header.carousel {
     /*height: 50%;*/
     height: 300px;
@@ -71,6 +75,10 @@ header.carousel .fill {
   margin-bottom: 30px;
 }
 
+
+/*********************************/
+/* BODY */
+/*********************************/
 body {
   padding-top: 0;
 }
@@ -79,6 +87,10 @@ body#default {
   padding-top: 0;
 }
 
+
+/*********************************/
+/* FOOTER */
+/*********************************/
 footer {
   background: #45b3e7;
 }
