@@ -34,6 +34,7 @@ div#spree-header.need-margin {
 
 #spree-header #header {
   padding-bottom: 0;
+  background: #45b3e7
 }
 
 header .container-fluid .row {
@@ -76,4 +77,12 @@ body {
 
 body#default {
   padding-top: 0;
+}
+
+footer {
+  background: #45b3e7;
+}
+
+footer p {
+  padding-top: 20px;
 }

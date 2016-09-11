@@ -1,23 +1,3 @@
-# Deface::Override.new(:virtual_path => 'spree/shared/_header',
-#   :name => 'add phone to header',
-#   :insert_after => "figure#logo",
-#   :text => "
-#             <div class='header_phone'>
-#               Phone: (877) 555-5555  
-#             </div>
-#   ")
-
-# The following will replace the logo with the text
-# Deface::Override.new(:virtual_path => 'spree/shared/_header',
-#   :name => 'add phone to header',
-#   :replace => "figure#logo",
-#   :text => "
-#             <p>
-#                 MyStore Copyright 2014
-#             </p>
-#   ")
-
-
 Deface::Override.new(:virtual_path => 'spree/shared/_header',
   :name => 'add carousel after header',
   :replace => "div#spree-header",
@@ -101,14 +81,3 @@ Deface::Override.new(:virtual_path => 'spree/shared/_header',
             </header>
           <% end %>
   ')
-
-
-
-# Deface::Override.new(:virtual_path => 'spree/shared/_header',
-#   :name => 'add carousel after header',
-#   :insert_after => "div#spree-header",
-#   :text => '
-#             <div class="container">
-#               Hello World
-#             </div>
-#   ')
