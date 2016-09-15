@@ -12,3 +12,4 @@
 //= require spree/frontend/spree_paypal_express
 //= require spree/frontend/spree_i18n
 //= require spree/frontend/spree_sakhat_sales
+//= require spree/frontend/spree_contactus2
