@@ -56,7 +56,7 @@ gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: 
 gem 'spree_i18n', git: 'git://github.com/spree/spree_i18n.git', branch: '3-0-stable'
 gem 'spree_sakhat_sales', github: 'alexvco/spree_sakhat_sales'     
 # gem 'spree_contactus', github: 'alexvco/spree_contactus'     
-gem 'spree_contactus2', github: 'alexvco/spree_contactus2'     
+# gem 'spree_contactus2', github: 'alexvco/spree_contactus2'     
 gem 'puma', '~> 3.6'
 
 
