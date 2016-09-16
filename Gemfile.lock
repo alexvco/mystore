@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/alexvco/spree_contactus.git
+  revision: 44a6ee21db320878208892755fee3dd29c1db423
+  specs:
+    spree_contactus (3.0.9)
+      spree_core (~> 3.0.9)
+
+GIT
   remote: git://github.com/alexvco/spree_sakhat_sales.git
   revision: bd512397fb5518bb4ca761f590df09ef7ead8c42
   specs:
@@ -393,6 +400,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   spree (~> 3.0.9)
   spree_auth_devise (~> 3.0.0)
+  spree_contactus!
   spree_gateway (~> 3.0.0)
   spree_i18n!
   spree_mail_settings!
