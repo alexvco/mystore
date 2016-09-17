@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/alexvco/spree_contactus.git
-  revision: a5f8326185344590439a77435bd72520784cf603
+  revision: 449c553e3f364754e4d3e5e9cfc935d771f5eaf7
   specs:
     spree_contactus (3.0.9)
       spree_core (~> 3.0.9)
