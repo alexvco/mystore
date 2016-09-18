@@ -2,6 +2,8 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
+require 'action_mailer'
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -37,5 +39,22 @@ module Mystore
     config.active_record.raise_in_transactional_callbacks = true
 
     config.assets.initialize_on_precompile = false
+
+    config.action_mailer.perform_deliveries = true
+    config.action_mailer.raise_delivery_errors = true
+    config.action_mailer.default :charset => "utf-8"
+    config.action_mailer.default content_type: "text/html"
+    config.action_mailer.default_url_options = { host: ENV['TOY_HOST'] }
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      address:              "smtp.gmail.com",
+      port:                 '587',
+      domain:               'mail.google.com',
+      user_name:             ENV['TOY_EMAIL'],
+      password:              ENV['TOY_PASS'],
+      authentication:       :plain,
+      enable_starttls_auto: true 
+    }
+  end
   end
 end
