@@ -83,8 +83,51 @@ body {
   padding-top: 0;
 }
 
+/*body[data-role="body"] {
+  padding-top: 0 !important;
+}*/
+
+body#cart {
+  padding-top: 0;
+}
+
+body#product-details {
+  padding-top: 0;
+}
+
 body#default {
   padding-top: 0;
+}
+
+body#login {
+  padding-top: 0;
+}
+
+body#signup {
+  padding-top: 0;
+}
+
+
+
+/*********************************/
+/* SHOPPING CART */
+/*********************************/
+.btn-primary, .btn.payment-action-edit {
+  background-color: #45b3e7 !important;
+  border-color: #45b3e7 !important;  
+  color: white !important;
+}
+
+
+/*********************************/
+/* PAGINATION */
+/*********************************/
+.pagination .page.active a {
+  background: #45b3e7 !important;
+  color: white !important;
+}
+.pagination li a {
+  color: #45b3e7 !important; 
 }
 
 
@@ -97,4 +140,8 @@ footer {
 
 footer p {
   padding-top: 20px;
+}
+
+footer li a {
+  color: #FBFBFB;
 }
