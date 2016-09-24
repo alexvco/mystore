@@ -18,8 +18,9 @@ Spree.config do |config|
   # config.logo = '/assets/logo/spree_50-1c7335be355d4672a35c5023956d0c883f254831f3e3dae3f2ca05976ceb5e50.png' #this is to change back to original logo
   config.admin_interface_logo = 'admin/rails_2.png' #this is to change the backend/admin logo of your site
 
-
-s3_credentials: {
+  attachment_config = {
+    
+    s3_credentials: {
         access_key_id:     ENV['AWS_ACCESS_KEY_ID'],
         secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
         bucket:            ENV['S3_BUCKET_NAME']
