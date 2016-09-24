@@ -17,6 +17,38 @@ Spree.config do |config|
   config.logo = 'rails.png' #this is to change the main logo of your site
   # config.logo = '/assets/logo/spree_50-1c7335be355d4672a35c5023956d0c883f254831f3e3dae3f2ca05976ceb5e50.png' #this is to change back to original logo
   config.admin_interface_logo = 'admin/rails_2.png' #this is to change the backend/admin logo of your site
+
+
+s3_credentials: {
+        access_key_id:     ENV['AWS_ACCESS_KEY_ID'],
+        secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
+        bucket:            ENV['S3_BUCKET_NAME']
+      },
+
+      storage:        :s3,
+      s3_headers:     { "Cache-Control" => "max-age=31557600" },
+      s3_protocol:    "https",
+      bucket:         ENV['S3_BUCKET_NAME'],
+      url:            ":s3_domain_url",
+
+      styles: {
+          mini:     "48x48>",
+          small:    "100x100>",
+          product:  "240x240>",
+          large:    "600x600>"
+      },
+
+      path:           "/:class/:id/:style/:basename.:extension",
+      default_url:    "/:class/:id/:style/:basename.:extension",
+      default_style:  "product"
+    }
+
+    attachment_config.each do |key, value|
+      Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
+    end
+
+
+
 end
 
 Spree.user_class = "Spree::User"
