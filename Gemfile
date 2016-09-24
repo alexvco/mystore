@@ -59,4 +59,4 @@ gem 'spree_contactus', github: 'alexvco/spree_contactus'
 gem 'puma', '~> 3.6'
 
 
- 
+gem 'aws-sdk', '< 2.0'
