@@ -4,41 +4,50 @@ Deface::Override.new(:virtual_path => 'spree/shared/_header',
   :text => '
 
             <div id="spree-header" class="<%= on_homepage? %>">
-              <header id="header" data-hook>
+              <header id="header" class="navbar navbar-default" data-hook>
                 <div class="container-fluid">
-                  <div class="row">
-                    <figure id="logo" class="col-lg-4 col-md-12 col-sm-12" data-hook>
+
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav-bar" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <figure id="logo" class="col-md-4" data-hook>
                       <%= logo %>
                     </figure>
+                  </div>
 
-                    <nav class="navbar col-lg-8 col-md-12 col-sm-12" id="top-nav-bar">
-                      <ul id="nav-bar" class="nav navbar-nav navbar-right" data-hook>
-                        <li id="search-bar" data-hook>
+                  <div class="collapse navbar-collapse" id="top-nav-bar">
+                    <ul id="nav-bar" class="nav navbar-nav navbar-right" data-hook>
+                      <li id="search-bar" data-hook>
                           <%= render :partial => \'spree/shared/search\' %>
-                        </li>
-                        <% if spree_current_user %>
-                          <li><%= link_to Spree.t(:my_account), spree.account_path %></li>
-                          <li><%= link_to Spree.t(:logout), spree.logout_path %></li>
-                        <% else %>
-                          <li id="link-to-login"><%= link_to Spree.t(:login), spree.login_path %></li>
-                          <li id="link-to-login"><%= link_to Spree.t(:signup), spree.signup_path %></li>
-                        <% end %>
-                          <li id="link-to-cart" data-hook>
+                      </li>
+
+                      <% if spree_current_user %>
+                        <li><%= link_to Spree.t(:my_account), spree.account_path %></li>
+                        <li><%= link_to Spree.t(:logout), spree.logout_path %></li>
+                      <% else %>
+                        <li id="link-to-login"><%= link_to Spree.t(:login), spree.login_path %></li>
+                        <li id="link-to-login"><%= link_to Spree.t(:signup), spree.signup_path %></li>
+                      <% end %>
+                        <li id="link-to-cart" data-hook>
                           <noscript>
                             <%= link_to Spree.t(:cart), \'/cart\' %>
                           </noscript>
                           &nbsp;
                         </li>
-                        <script>Spree.fetch_cart()</script>
-                      </ul>
-                    </nav>
+                      <script>Spree.fetch_cart()</script>
 
-
-                      
+                    </ul>
                   </div>
+
                 </div>
               </header>
             </div>
+
+
 
             <% if current_page?(:controller => \'home\', :action => \'index\') %>
               <header id="myCarousel" class="carousel slide">
