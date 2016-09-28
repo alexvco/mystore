@@ -60,3 +60,4 @@ gem 'puma', '~> 3.6'
 
    
 gem 'aws-sdk', '< 2.0'
+gem 'newrelic_rpm'
