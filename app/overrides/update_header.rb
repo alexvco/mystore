@@ -32,12 +32,14 @@ Deface::Override.new(:virtual_path => 'spree/shared/_header',
                         <li id="link-to-login"><%= link_to Spree.t(:login), spree.login_path %></li>
                         <li id="link-to-login"><%= link_to Spree.t(:signup), spree.signup_path %></li>
                       <% end %>
-                        <li id="link-to-cart" data-hook>
-                          <noscript>
-                            <%= link_to Spree.t(:cart), \'/cart\' %>
-                          </noscript>
-                          &nbsp;
-                        </li>
+                      <li id="search-bar" data-hook>
+                          <%= link_to Spree.t(:contact_us), spree.contact_us_path %>
+                      </li>
+                      <li id="link-to-cart" data-hook>
+                        
+                          <%= link_to Spree.t(:cart), \'/cart\' %>
+                        &nbsp;
+                      </li>
                       <script>Spree.fetch_cart()</script>
 
                     </ul>
