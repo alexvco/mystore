@@ -1,4 +1,5 @@
 set :stage, :production
+server '104.131.112.10', user: 'deploy', roles: %w{web app db}
 
 
 # server-based syntax
