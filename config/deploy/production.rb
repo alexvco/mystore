@@ -1,3 +1,6 @@
+set :stage, :production
+
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
