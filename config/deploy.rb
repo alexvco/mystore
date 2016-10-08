@@ -4,6 +4,8 @@ lock '3.6.1'
 set :application, 'centerfortoyz'
 set :repo_url, 'git@github.com:alexvco/mystore.git'
 
+set :branch, ENV['BRANCH'] if ENV['BRANCH']
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
