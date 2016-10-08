@@ -43,6 +43,10 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+    
+  gem 'capistrano', '~> 3.6', '>= 3.6.1'
+  gem 'capistrano-rails', '~> 1.1', '>= 1.1.8'
+  gem 'capistrano-rbenv', '~> 2.0', '>= 2.0.4'
 end
 
 gem 'rails_12factor', group: :production
@@ -61,3 +65,4 @@ gem 'puma', '~> 3.6'
    
 gem 'aws-sdk', '< 2.0'
 gem 'newrelic_rpm'
+
