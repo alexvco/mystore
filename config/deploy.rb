@@ -4,6 +4,8 @@ lock '3.6.1'
 set :application, 'centerfortoyz'
 set :repo_url, 'git@github.com:alexvco/mystore.git'
 
+set :passenger_restart_with_touch, true
+
 set :branch, ENV['BRANCH'] if ENV['BRANCH']
 
 # Default branch is :master
